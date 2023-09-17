@@ -47,6 +47,7 @@ while True:
         soup = BeautifulSoup(response.text, 'html.parser')
     else:
         break
+
 with open('files/quotes.json', 'w', encoding='utf-8') as fd:
     json.dump(quotes, fd, ensure_ascii=False, indent=2)
 
